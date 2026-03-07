@@ -117,3 +117,8 @@ src/__tests__/             # Vitest specs mirroring src/ structure
 - Files: a–h (left to right), Ranks: 1–8 (bottom to top)
 - Square color: `(fileIndex + rankIndex) % 2 === 0` → dark
 - Chess.com green theme: light `#EEEED2`, dark `#769656`, highlight `rgba(255, 255, 0, 0.4)`
+
+## Workflow Rules
+
+- Always read current file contents before suggesting or making edits — never assume file state
+- When reviewing or fixing issues, check all related files proactively instead of asking the user to provide them

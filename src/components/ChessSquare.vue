@@ -22,4 +22,25 @@ defineProps<Props>()
 defineEmits<{ (e: 'click', squareId: SquareId): void }>()
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  position: relative;
+
+  &--light {
+    background-color: var(--color-light);
+  }
+  &--dark {
+    background-color: var(--color-dark);
+  }
+
+  &--highlighted::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-highlight);
+  }
+}
+</style>

@@ -28,4 +28,19 @@ const isLight = (rank: Rank, file: File) => {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '@/assets/styles/mixins';
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  min-width: 264px;
+
+  @include mixins.tablet {
+    height: 100vh;
+    width: auto;
+  }
+}
+</style>
