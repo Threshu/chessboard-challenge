@@ -70,16 +70,17 @@
 
 ## Phase 5: SidebarLog Component
 
-- [ ] Create `src/components/SidebarLog.vue`
-  - Renders `clickLog` as ordered list: "1. e4", "2. d5", etc.
+- [x] Create `src/components/SidebarLog.vue`
+  - Renders `clickLog` as ordered list
   - Reset button → calls `resetBoard()`
-  - `overflow-y: auto` for scrollable log
-  - Styled entries
-- [ ] Write tests: `src/__tests__/components/SidebarLog.spec.ts`
-  - Empty initially
-  - Entries appear after highlight clicks
-  - No entry on un-highlight
-  - Reset clears list
+  - `data-testid` attributes for testing (sidebar-log, reset-button, log-entry)
+  - Placeholder "No moves yet" when log empty
+- [x] Write tests: `src/__tests__/components/SidebarLog.spec.ts`
+  - No log entries initially, shows placeholder
+  - Displays entry after highlighting a square
+  - No extra entry after unhighlighting
+  - Reset clears log entries and shows placeholder
+  - `beforeEach(resetBoard)` to isolate module-level state
 
 ## Phase 6: App Layout & Responsive CSS
 
