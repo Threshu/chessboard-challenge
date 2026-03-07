@@ -12,9 +12,7 @@ describe('ChessSquare', () => {
       },
     })
 
-    const square = wrapper.find('[data-square="e4"]')
-
-    expect(square.exists()).toBe(true)
+    expect(wrapper.attributes('data-square')).toBe('e4')
   })
 
   it('applies square--light class for light square', () => {
@@ -67,9 +65,7 @@ describe('ChessSquare', () => {
       },
     })
 
-    const square = wrapper.find('[data-square="e4"]')
-
-    expect(square.classes()).toContain('square--highlighted')
+    expect(wrapper.classes()).toContain('square--highlighted')
   })
 
   it('does not apply square--highlighted class when not highlighted', () => {
@@ -81,9 +77,7 @@ describe('ChessSquare', () => {
       },
     })
 
-    const square = wrapper.find('[data-square="e4"]')
-
-    expect(square.classes()).not.toContain('square--highlighted')
+    expect(wrapper.classes()).not.toContain('square--highlighted')
   })
 
   it('has correct accessibility attributes', () => {

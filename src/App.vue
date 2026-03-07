@@ -1,8 +1,9 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>Hi!</h1>
-  <p>Chesscom</p>
+  <ChessBoard />
 </template>
+
+<script setup lang="ts">
+import ChessBoard from './components/ChessBoard.vue'
+</script>
 
 <style scoped></style>

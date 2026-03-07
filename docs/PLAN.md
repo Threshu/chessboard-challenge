@@ -56,15 +56,17 @@
 
 ## Phase 4: ChessBoard Component
 
-- [ ] Create `src/components/ChessBoard.vue`
+- [x] Create `src/components/ChessBoard.vue`
   - CSS Grid: `repeat(8, 1fr)` columns and rows
   - Iterate rank 8→1, file a→h
-  - Compute light/dark per square
-  - Connect `toggleSquare` on click
-- [ ] Write tests: `src/__tests__/components/ChessBoard.spec.ts`
+  - Compute light/dark per square: `(fileIndex + rank) % 2 === 0` → light
+  - Connect `toggleSquare` on click, `isHighlighted` on prop
+  - Flat structure: `<template>` wrapper for rank loop, ChessSquare as direct grid children
+- [x] Write tests: `src/__tests__/components/ChessBoard.spec.ts`
   - 64 squares rendered
-  - Correct `data-square` values
-  - Click toggles highlight
+  - Correct corner `data-square` values (a8, h8, a1, h1)
+  - Click toggles highlight class
+  - `beforeEach(resetBoard)` to isolate module-level state
 
 ## Phase 5: SidebarLog Component
 
