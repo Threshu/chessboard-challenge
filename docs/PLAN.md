@@ -39,13 +39,20 @@
 
 ## Phase 3: ChessSquare Component
 
-- [ ] Create `src/components/ChessSquare.vue`
+- [x] Create `src/components/ChessSquare.vue`
   - Props: `squareId`, `isLight`, `isHighlighted`
   - Emits: `click` → `squareId`
   - `data-square` attribute for testing
   - `aria-label="{file}{rank}"`, `role="button"`, `tabindex="0"` for accessibility
-  - Light/dark classes, highlight overlay via `::after`
-- [ ] Write tests: `src/__tests__/components/ChessSquare.spec.ts`
+  - Light/dark BEM classes, highlight overlay via `::after`
+- [x] Write tests: `src/__tests__/components/ChessSquare.spec.ts`
+  - Renders with correct `data-square` attribute
+  - Applies `square--light` class for light square
+  - Applies `square--dark` class for dark square
+  - Emits `click` with `squareId` when clicked
+  - Applies `square--highlighted` class when highlighted
+  - Does not apply `square--highlighted` class when not highlighted
+  - Has correct `aria-label` attribute
 
 ## Phase 4: ChessBoard Component
 
