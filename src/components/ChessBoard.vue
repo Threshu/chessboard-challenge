@@ -1,5 +1,5 @@
 <template>
-  <div class="board">
+  <div class="board" data-testid="board">
     <template v-for="rank in ranks" :key="rank">
       <ChessSquare
         v-for="file in files"

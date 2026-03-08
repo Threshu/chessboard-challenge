@@ -84,20 +84,25 @@
 
 ## Phase 6: App Layout & Responsive CSS
 
-- [ ] Build `App.vue` layout:
+- [x] Build `App.vue` layout:
   - Desktop (≥768px): `flex-direction: row` — board left, sidebar right
   - Mobile (<768px): `flex-direction: column` — board top, sidebar below
-- [ ] Board wrapper responsive sizing:
-  - `width: min(available-width, available-height)`
+- [x] Board wrapper responsive sizing:
   - `aspect-ratio: 1 / 1`
   - `min-width: 264px; min-height: 264px`
-  - Use `100dvh` with `100vh` fallback
-- [ ] Write tests: `src/__tests__/App.spec.ts`
+  - Desktop: board height = viewport height, width from aspect-ratio
+  - Fine-tune sizing in Phase 7
+- [x] Component scoped styles:
+  - ChessSquare: light/dark colors, highlight overlay via `::after`
+  - ChessBoard: CSS Grid 8×8
+  - SidebarLog: padding, overflow-y, flex: 1
+  - Fine-tune in Phase 7
+- [x] Write tests: `src/__tests__/components/App.spec.ts`
   - Board and sidebar both render
   - End-to-end: click square → highlight appears + log entry in sidebar
   - Reset button clears highlights and log
-- [ ] Test across viewports (manual QA): 375px, 768px, 1440px
-- [ ] Verify 264px minimum holds
+- [x] Test across viewports (manual QA): 375px, 768px, 1440px
+- [x] Verify 264px minimum holds
 
 ## Phase 7: Polish & Deploy
 

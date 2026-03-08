@@ -62,8 +62,11 @@ src/__tests__/             # Vitest specs mirroring src/ structure
 
 - Colocate specs in `src/__tests__/` directory
 - Use `mount()` (not `shallowMount`) for integration confidence
-- Select elements via `[data-square="e4"]` selectors
+- Select elements via `[data-square="e4"]` selectors — always quote attribute values in selectors
 - Test composables in isolation (plain TS, no component mount)
+- CSS attribute selectors must use quoted values: `[data-testid="value"]` not `[data-testid=value]`
+- Consistent selector style across all test files — don't mix CSS class selectors (`.board`) with data-testid selectors in the same test
+- Proactively flag typos, unclosed brackets, and syntax issues in user code during review
 
 ## Best Practices
 
