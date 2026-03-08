@@ -16,8 +16,8 @@ import SidebarLog from './components/SidebarLog.vue'
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
   min-height: 100vh;
+  min-height: 100dvh;
 
   @include mixins.tablet {
     flex-direction: row;

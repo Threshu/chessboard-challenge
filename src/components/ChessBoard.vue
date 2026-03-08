@@ -35,13 +35,15 @@ const isLight = (rank: Rank, file: File) => {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   aspect-ratio: 1 / 1;
-  width: 100%;
+  width: min(100%, 100vh);
   min-width: 264px;
   min-height: 264px;
+  margin: 0 auto;
 
   @include mixins.tablet {
-    height: 100vh;
-    width: auto;
+    // Reserve space for sidebar (~192px)
+    width: min(100vh, calc(100vw - 12rem));
+    align-self: center;
   }
 }
 </style>
