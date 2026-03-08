@@ -5,7 +5,7 @@ Interactive chessboard application built for the [Chess.com](https://chess.com) 
 ## Links
 
 - **Live Demo:** [chessboard-challenge.web.app](https://chessboard-challenge.web.app)
-- **Download (.zip):** [Google Drive](https://drive.google.com/drive/folders/1aPo8sOrrelZmKKLek2ak4aR6JCSKdHtH)
+- **Download (.zip):** [Google Drive](https://drive.google.com/drive/folders/1isgjztpT7KMvxWOnKsv-a44oKjzWa9n3?usp=sharing)
 
 ## Features
 
