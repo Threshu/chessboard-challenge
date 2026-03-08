@@ -106,12 +106,15 @@
 
 ## Phase 7: Polish & Deploy
 
-- [ ] Final visual QA — colors, spacing, highlights
-- [ ] Ensure all tests pass: `npm run test`
-- [ ] Clean build: `npm run build`
-- [ ] Push to GitHub
-- [ ] Deploy to Firebase Hosting — verify live demo URL
-- [ ] Create .zip of project (exclude `node_modules/`, `.git/`, `dist/`)
+- [x] CSS review — remove redundant rules, fix missing `min-height`, add `overflow: hidden`
+- [x] Fix OL numbering bug (list-style-position: inside)
+- [x] Style sidebar with Chess.com dark theme
+- [x] Final visual QA — colors, spacing, highlights
+- [x] Ensure all tests pass: `npm run test` (22/22)
+- [x] Clean build: `npm run build`
+- [x] Push to GitHub
+- [x] Deploy to Firebase Hosting — verify live demo URL
+- [x] Create .zip of project (exclude `node_modules/`, `.git/`, `dist/`)
 
 ---
 
