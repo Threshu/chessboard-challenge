@@ -21,5 +21,30 @@ const { clickLog, resetBoard } = useBoardState()
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
+  background-color: var(--color-sidebar-bg);
+  color: var(--color-sidebar-text);
+
+  button {
+    background-color: var(--color-sidebar-button-bg);
+    color: inherit;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+
+    &:hover {
+      background-color: var(--color-sidebar-button-hover);
+    }
+  }
+
+  ol {
+    list-style-position: inside;
+    margin-top: 0.75rem;
+  }
+
+  li {
+    padding: 0.25rem 0;
+  }
 }
 </style>

@@ -24,7 +24,6 @@ defineEmits<{ (e: 'click', squareId: SquareId): void }>()
 
 <style lang="scss" scoped>
 .square {
-  width: 100%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
   position: relative;

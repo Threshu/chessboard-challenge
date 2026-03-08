@@ -37,6 +37,7 @@ const isLight = (rank: Rank, file: File) => {
   aspect-ratio: 1 / 1;
   width: 100%;
   min-width: 264px;
+  min-height: 264px;
 
   @include mixins.tablet {
     height: 100vh;

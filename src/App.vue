@@ -22,6 +22,7 @@ import SidebarLog from './components/SidebarLog.vue'
   @include mixins.tablet {
     flex-direction: row;
     height: 100vh;
+    overflow: hidden;
   }
 }
 </style>
